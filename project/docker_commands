@@ -1,0 +1,35 @@
+## Docker commands used to build the application 
+docker build -t techtrends .
+
+## Docker commands used to run the application
+docker run -p 7111:3111 techtrends
+## Docker commands used to get the application logs
+docker logs f7a7b7b5b0fb53bac0435b1d473f8a0f4274138a68ff8d3eaa5dcc6793b06d6c
+
+## Logs from the container running the TechTrends application
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+WARNING:_internal: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:_internal: * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+INFO:_internal:172.17.0.1 - - [28/Dec/2022 10:41:12] "GET / HTTP/1.1" 200 -
+INFO:_internal:172.17.0.1 - - [28/Dec/2022 10:41:12] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:_internal:172.17.0.1 - - [28/Dec/2022 10:41:12] "GET / HTTP/1.1" 200 -
+INFO:_internal:172.17.0.1 - - [28/Dec/2022 10:41:13] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:_internal:172.17.0.1 - - [28/Dec/2022 10:41:18] "GET /metrics HTTP/1.1" 200 -
+INFO:_internal:172.17.0.1 - - [28/Dec/2022 10:41:29] "GET /healthz HTTP/1.1" 200 -
+INFO:app:12/28/2022, 10:41:34,  Article CNCF Cloud Native Definition v1.0 retrieved
+INFO:_internal:172.17.0.1 - - [28/Dec/2022 10:41:34] "GET /5 HTTP/1.1" 200 -
+INFO:_internal:172.17.0.1 - - [28/Dec/2022 10:41:34] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:12/28/2022, 10:41:36,  Retrieving the about us page
+INFO:_internal:172.17.0.1 - - [28/Dec/2022 10:41:36] "GET /about HTTP/1.1" 200 -
+INFO:_internal:172.17.0.1 - - [28/Dec/2022 10:41:36] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:_internal:172.17.0.1 - - [28/Dec/2022 10:41:38] "GET /create HTTP/1.1" 200 -
+INFO:_internal:172.17.0.1 - - [28/Dec/2022 10:41:38] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:12/28/2022, 10:41:49,  Successfully created article Test
+INFO:_internal:172.17.0.1 - - [28/Dec/2022 10:41:49] "POST /create HTTP/1.1" 302 -
+INFO:_internal:172.17.0.1 - - [28/Dec/2022 10:41:49] "GET / HTTP/1.1" 200 -
+INFO:_internal:172.17.0.1 - - [28/Dec/2022 10:41:49] "GET /static/css/main.css HTTP/1.1" 304 -

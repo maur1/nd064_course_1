@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "nd064-course-1"
+version = "0.1.0"
+description = ""
+authors = ["Maureen <maureen@live.no>"]
+readme = "README.md"
+packages = [{include = "nd064_course_1"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

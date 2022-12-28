@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  techtrends
+  namespace: sandbox
+spec:
+  replicas: 3
+  teamplate:
+    spec:
+      containers:
+        - name: techtrends:latest
+          resources:
+              limits:
+                memory: 500Mi
+              requests:
+                cpu: 300m
+                memory: 500Mi
